@@ -14,7 +14,7 @@ def testapi():
 
 
 @api.post("/placement_or_not")
-def predict_placement(marks:int):
+def predict_placement(marks:float):
 
     new_data = pd.DataFrame({
         "marks":[marks]
